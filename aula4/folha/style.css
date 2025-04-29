@@ -41,7 +41,29 @@ section {
 section article p {
     padding: 5px 0
 }
+.lista {
+    padding: 0 30px;
+}
+li::marker{
+    font-weight: bold;
+}
 footer {
     padding: 20px;
     text-align: center;
+}
+.produto{
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+.produto h2 {
+    color: #0e6856;
+}
+.produto p {
+    margin: 5px 0;
+}
+.preco {
+    color: coral;
+    font-weight: bold;
 }
