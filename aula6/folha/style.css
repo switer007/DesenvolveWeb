@@ -5,11 +5,30 @@
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.container {
+.container2 {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+}
+.container2 > div {
+    background-color: #000;
+    color: #fff;
+    margin: 10px 5px;
+    padding: 20px;
+    font-size: 30px;
+}
+.container-centralizado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: #ccc;
+}
+.container-centralizado > div {
+    background-color: #000;
+    width: 150px;
+    height: 150px;
 }
 .item {
     background-color: #ccc;
