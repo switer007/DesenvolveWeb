@@ -102,3 +102,54 @@ body {
     transform: translateY(63px);
     
 }
+/*-- ---------- sobre ---------- --*/
+#sobre {
+    background-color: var(--bg-cinza-claro);
+    padding: 50px 0;
+}
+.sobre-titulo {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 8%;
+}
+#sobre ul {
+    margin-left: 20px;
+}
+#sobre ul li {
+    margin: 10px 0;
+}
+#sobre img {
+    margin-left: 15%;
+}
+
+/* -- -------- clientes -------- --*/
+#clientes {
+    margin: 50px 0 ;
+}
+.clientes {
+    border-left: 4px solid var(--traco-titulo);
+    margin: 50px 0;
+}
+.clientes img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%; /*arredondamento da foto */
+    margin: 0 10px;
+}
+.cargo-cliente {
+display: inline-block;
+font-size: 12px;
+}
+
+/* -- ------------ Redes Sociais ----------- --*/
+#social {
+    background-color: var(--bg-cinza-claro);
+    padding: 50px 0;
+}
+.social-ico img {
+    width: 60px;
+    transition: 0.5s;
+}
+.social-ico a:hover img {
+    transform: translateY(-10px);
+}
