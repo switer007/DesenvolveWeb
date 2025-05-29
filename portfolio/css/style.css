@@ -266,6 +266,7 @@ nav ul li a:hover::after {
 .botao:hover {
     background-color: var(--magenta);
 }
+
 /* ********** contato ********* */
 .contato_esquerda {
     flex-basis: 35%;
