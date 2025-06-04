@@ -1,61 +1,266 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-}
+/* Variáveis de Cores (Inspiradas no Senac e um tema moderno) */
 :root {
-    --branco: #FFF;
+    --senac-blue: #007bff; /* Azul primário */
+    --senac-green: #28a745; /* Verde para destaque e botões */
+    --senac-dark-blue: #0056b3; /* Azul mais escuro para hover */
+    --senac-light-gray: #f8f9fa; /* Fundo claro */
+    --senac-text-color: #343a40; /* Texto geral escuro */
+    --senac-light-text: #6c757d; /* Texto secundário */
+    --senac-white: #ffffff;
 }
 
 body {
+    font-family: 'Roboto', sans-serif; /* Fonte mais moderna */
+    color: var(--senac-text-color);
+    background-color: var(--senac-light-gray);
+    overflow-x: hidden; /* Evita scroll horizontal indesejado */
+}
+
+/* --- Cabeçalho (Navbar) --- */
+.header-senac .navbar-brand .logo-senac {
+    height: 60px; /* Ajuste o tamanho do logo */
+    width: auto;
+}
+
+.header-senac .navbar-nav .nav-link {
+    color: var(--senac-text-color);
+    font-weight: 500;
+    margin-right: 15px; /* Espaçamento entre os itens do menu */
+    transition: color 0.3s ease;
+}
+
+.header-senac .navbar-nav .nav-link:hover,
+.header-senac .navbar-nav .nav-link.active {
+    color: var(--senac-blue);
+}
+
+/* Botões de Pesquisa e Login na Navbar */
+.header-senac .btn-outline-primary {
+    color: var(--senac-blue);
+    border-color: var(--senac-blue);
+}
+.header-senac .btn-outline-primary:hover {
+    background-color: var(--senac-blue);
+    color: var(--senac-white);
+}
+
+.header-senac .btn-outline-secondary {
+    color: var(--senac-text-color);
+    border-color: var(--senac-text-color);
+}
+.header-senac .btn-outline-secondary:hover {
+    background-color: var(--senac-text-color);
+    color: var(--senac-white);
+}
+
+
+/* --- Seção Hero (Destaque) --- */
+.hero-section {
     background-image: linear-gradient(to right, #03588C, rgba(3,88,140,0.2));
-    color: var(--);
-}
-#header {
-    width: 100%;
-    height: 100vh;
-    background-image: url(..//imagens/homemdemeiaidade.png);
-    background-size: cover;
-    background-position: center;   
-}
-.container {
-    padding: 10px 10%;
-}
-.logo {
-    width: 120px;
-    z-index: 0;
-}
-nav {
+    min-height: 500px; /* Altura mínima para a seção */
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    display: inline;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem; /* Aumenta o tamanho do título */
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+}
+
+.text-senac-green {
+    color: var(--senac-green); /* Destaque com a cor verde */
+}
+
+/* Typed.js cursor */
+.typed-cursor {
+    font-size: 1.3rem;
+    color: var(--senac-green);
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink{
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* --- Seção de Cursos em Destaque --- */
+.card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important; /* Sombra mais pronunciada no hover */
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-weight: 700;
+}
+
+/* Botões dos cards de curso */
+.btn-success {
+    background-color: var(--senac-green);
+    border-color: var(--senac-green);
+}
+.btn-success:hover {
+    background-color: #218838; /* Um verde um pouco mais escuro */
+    border-color: #1e7e34;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #343a40; /* Texto mais escuro para o botão amarelo */
+}
+.btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+.btn-info:hover {
+    background-color: #138496;
+    border-color: #117a8b;
+}
+
+
+/* --- Seção de Vídeo Promocional --- */
+.video-promo-section .ratio {
+    max-width: 800px; /* Limita a largura do vídeo */
+    margin-left: auto;
+    margin-right: auto;
     
 }
-nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
+.carousel-indicators {
+    bottom: 150px;
 }
-nav ul li a {
-    color: var(--branco);
-    text-decoration: none;
-    font-size: 18px;
-    position: relative;
+.video-overlay-container {
+    position: relative; /* Define um contexto de empilhamento para o vídeo */
+    width: 100%; /* ou um valor fixo */
+    height: auto; /* ou um valor fixo */
+    /* background-image: url('caminho/para/sua-imagem-de-fundo.jpg'); */ /* Exemplo de fundo */
+    /* background-color: #f0f0f0; */ /* Exemplo de cor de fundo */
+    /* Outros estilos para o contêiner */
 }
-nav ul li a::after {
-    content: '';
-    width: 0;
-    height: 3px;
-    background-color: var(--magenta);
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-}
-nav ul li a:hover::after {
-    width: 100%;
 
+#transparentVideo {
+    /* Se precisar que o vídeo se sobreponha a algo abaixo dele */
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 0; */
+    /* z-index: 1; */ /* Garante que ele fique acima de elementos com z-index menor */
+    /* Certifique-se de que a tag video tenha width: 100% e height: auto ou um tamanho fixo */
+    width: 100%;
+    height: auto;
+    display: block; /* Remove espaços extras comuns em elementos inline */
+}
+
+/* --- Seção de Chamada para Ação (CTA) --- */
+.cta-section {
+    background-color: var(--senac-blue);
+    text-align: center;
+}
+
+.cta-section .btn-light {
+    color: var(--senac-blue) !important;
+}
+
+/* --- Rodapé --- */
+.footer-senac {
+    background-color: var(--senac-text-color); /* Fundo escuro */
+}
+
+.footer-senac a {
+    color: var(--senac-light-text) !important;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-senac a:hover {
+    color: var(--senac-white) !important;
+}
+
+.footer-senac .bi {
+    font-size: 1.5rem; /* Ajuste o tamanho dos ícones sociais */
+}
+
+.footer-senac .text-white-50 {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+hr.bg-secondary {
+    border-color: rgba(255, 255, 255, 0.2) !important; /* Linha divisória mais suave */
+}
+
+/* --- Media Queries para Responsividade --- */
+@media (max-width: 991.98px) { /* Para telas menores que 'lg' (desktop) */
+    .header-senac .navbar-collapse {
+        background-color: var(--senac-white);
+        padding: 15px;
+        border-radius: 8px;
+        margin-top: 10px;
+        box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
+    }
+
+    .header-senac .navbar-nav {
+        margin-bottom: 15px !important; /* Espaçamento abaixo do menu em mobile */
+    }
+    
+    .header-senac .navbar-nav .nav-item {
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .header-senac .d-flex {
+        flex-direction: column;
+        align-items: stretch !important;
+    }
+
+    .header-senac .d-flex .form-control {
+        margin-bottom: 10px;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    .hero-section p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 767.98px) { /* Para telas menores que 'md' (tablet) */
+    .hero-section .row {
+        flex-direction: column-reverse; /* Inverte a ordem do texto e imagem no mobile */
+    }
+}
+
+@media (max-width: 575.98px) { /* Para telas menores que 'sm' (celular) */
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    .hero-section p {
+        font-size: 1rem;
+    }
 }
