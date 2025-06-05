@@ -165,6 +165,29 @@ body {
 }
 
 /*-- --------- Customização ---------- --*/
+#customizacao {
+    padding: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+}
+
+
+/*-- --------- Doação ---------- --*/
+#doacao {
+    margin: 60px 0;
+    left: auto;
+    width: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+}
+.doacao img {
+    height: 300px;
+    width: auto;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+
 
 /* -- -------- comunidade -------- --*/
 #comunidade {
@@ -185,8 +208,8 @@ body {
     margin: 0 10px;
 }
 .cargo-comunidade {
-display: inline-block;
-font-size: 12px;
+    display: inline-block;
+    font-size: 12px;
 
 }
 
