@@ -11,7 +11,7 @@
 <?php
 # primeiro código
 echo "Olá Mundo!";
-//imprime a mensagem Olá Mundo na tela
+//echo imprime a mensagem Olá Mundo na tela.
 /* comentários em linha podem ser feitos com os símbolos # e //, já os comentários com mais de uma linha devem ser feitos com os sinais /* e */
 //phpinfo ();
 
@@ -28,9 +28,9 @@ echo " Olá, meu nome é $nome e meu sobrenome é $sobrenome.";
 /*Ex. 1 - Crie um script PHP que declare três variáveis: $nome, $idade e $cidade. Atribua valores a essas variáveis e exiba uma mensagem que combine esses valores. */
 $divisao = "<br>============================================== </br>";
 echo $divisao;
-echo $nome = "James";
-echo $idade = "33anos";
-echo $cidade = "Botucatu";
+$nome = "James";
+$idade = "33anos";
+$cidade = "Botucatu";
 
 echo " Olá meu nome é $nome, tenho $idade e sou da cidade de $cidade.";
 
