@@ -34,6 +34,24 @@ $cidade = "Botucatu";
 
 echo " Olá meu nome é $nome, tenho $idade e sou da cidade de $cidade.";
 
+/*
+Operações Aritméticas no PHP:
+Soma:  +
+Subtração: -
+Multiplicação: *
+Divisão /
+*/
+echo $divisao;
+
+$numero1 = 56;
+$numero2 = 44;
+
+$soma = $numero1 + $numero2;
+echo "A soma entre $numero1 e $numero2 é igual a $soma";
+
+$divisao;
+/* Ex.2 - Crie um script PHP que declare duas variáveis númericas, $num1 e $num2. Realize as operações de soma, subtração, multiplicação e divisão entre essas variáveis e exiba os resultados. */
+
 
 ?>
 
