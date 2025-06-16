@@ -57,7 +57,15 @@ echo "Exemplo de resto da divisão<br>";
 $divisor = 20;
 $quociente = 2;
 $resto = $divisor % $quociente;
-echo "O resto da divisão de $divisor por $quociente é: $resto"
+echo "O resto da divisão de $divisor por $quociente é: $resto";
+echo $traco;
+
+echo "Exemplo de operador de potenciação <br>";
+$base = 2;
+$expoente = 3;
+$potencia = $base ** $expoente;
+echo "$base elevado a $expoente é: $potencia";
+echo $traco
 
 ?>
 
