@@ -52,6 +52,37 @@ echo "A soma entre $numero1 e $numero2 é igual a $soma";
 $divisao;
 /* Ex.2 - Crie um script PHP que declare duas variáveis númericas, $num1 e $num2. Realize as operações de soma, subtração, multiplicação e divisão entre essas variáveis e exiba os resultados. */
 
+$num1 = 10;
+$num2 = 5;
+
+$soma = $num1 + $num2;
+echo "A soma entre $num1 e $num2 é igual a $soma";
+echo $divisao;
+
+$num3 = 80;
+$num4 = 30;
+
+$subtracao = $num3 - $num4;
+echo "A subtração do $num3 e $num4 é igual a $subtracao";
+echo $divisao;
+
+$num5 = 50;
+$num6 = 45;
+
+$multiplicacao = $num5 + $num6;
+echo "A multiplicação do $num5 e $num6 é igual a $multiplicacao";
+echo $divisao;
+
+$num7 = 60;
+$num8 = 40;
+
+$divisao = $num8 + $num7;
+echo "A divisão do $num7 / $num8 é igual a $divisao";
+echo $divisao;
+
+
+
+
 
 ?>
 
