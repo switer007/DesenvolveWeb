@@ -216,6 +216,7 @@ body {
 #rodape {
     background-image: linear-gradient(to right, var(--bg-nave-Bar-roxo-claro), var(--bg-nave-Bar-roxo-escuro));
     color: var(--branco);
+    
 }
 .rodape-img {
     height: 80%;
@@ -237,7 +238,7 @@ body {
         border: none;
         font-size: 12px;
         padding: 5px;
-        border-radius: 0;
+        border-radius: 0px;
         margin-top: 25px;
         max-width: 250px;
     }
