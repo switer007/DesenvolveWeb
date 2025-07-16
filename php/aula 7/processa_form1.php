@@ -55,7 +55,7 @@
                 }
             }
             else {
-                echo "<div class=\"--bs-warning\"><p>O formulário não foi enviado.</p></div>";
+                echo "<div class=\"alert alert-warning\"><p>O formulário não foi enviado.</p></div>";
             }
         
     ?>
