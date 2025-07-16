@@ -20,7 +20,7 @@
         <li>Totalmente satisfeito(a)</li>
     </ol>
 
-    <form action="" method="post">
+    <form action="processa_form1.php" method="post">
         <div class="d-grid gap-3">
             <div class="border border-3 rounded p-3">
                 <h4>Qual a sua faixa de idade?</h4>
@@ -34,6 +34,18 @@
                 <input type="radio" name="q2" value="fem">Feminino<br>
                 <input type="radio" name="q2" value="outros">Outros
             </div>
+            <div class="border border-3 rounded p-3">
+                <h4>Você possui Diabetes e/ou Pressão Alta?</h4>
+                <input type="radio" name="q3"
+                value="diabetes">Sim, tenho Diabetes<br>
+                <input type="radio" name="q3"
+                value="pressao">Sim tenho Pressão Alta<br>
+                <input type="radio" name="q3"
+                value="dia/pressao">Sim, possuo Diabetes e Pressão Alta<br>
+                <input type="radio" name="q3"
+                value="nenhum">Não, não possuo nenhum dos dois
+            </div>
+            <button type="submit">Enviar</button>
         </div>
     </form>
 
