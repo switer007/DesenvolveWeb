@@ -26,7 +26,7 @@
                         <label for="passwordInput" class="form-label">Senha</label>
                         <input type="password" class="form-control" id="passwordInput" placeholder="Sua senha" required>
                     </div>
-                    <button type="submit" class="btn btn-primary w-100">Entrar</button>
+                    <button type="button" class="btn btn-dark">Entrar</button>
                     
                     <div id="error-message" class="text-danger text-center mt-3"></div>
                 </form>
