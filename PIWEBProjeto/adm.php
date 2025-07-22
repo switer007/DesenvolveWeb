@@ -20,11 +20,11 @@
     </div> -->
     <div class="row">
         <div class="col-md-2">
-            <button type="button" class="btn btn-dark">Cadastro</button>
-            <button type="button" class="btn btn-dark">Doação</button>
-            <button type="button" class="btn btn-dark">Lista de itens</button>
-            <button type="button" class="btn btn-dark">Lista de funcionários</button>
-            <button type="button" class="btn btn-dark">Checagem</button>
+            <button type="button" class="btn btn-dark">Cadastro</button><br>
+            <button type="button" class="btn btn-dark">Doação</button><br>
+            <button type="button" class="btn btn-dark">Lista de itens</button><br>
+            <button type="button" class="btn btn-dark">Lista de funcionários</button><br>
+            <button type="button" class="btn btn-dark">Checagem</button><br>
         </div>
         <div class="col-md-10">
             <table class="table">
